@@ -1,12 +1,12 @@
 
 
-const sendMessage = document.getElementById("sendMessage");
+const sendMessageEl = document.getElementById("sendMessage");
 
-const form = document.getElementById("form");
+const formEl = document.getElementById("form");
 
 function messageSent() {
+    formEl.innerHTML = "test";
+};
 
-    form.innerHTML = "Message sent";
-}
-
-sendMessage.addEventListener('click', messageSent());
+sendMessageEl.addEventListener('click', messageSent());
+;
