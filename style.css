@@ -64,10 +64,22 @@ h3 {
 }
 
 p {
-  max-width: 60ch;
+  max-width: 80ch;
     font-size: 0.8em;
     margin-bottom: 5px;
     
+}
+
+
+fieldset {
+  justify-content: center;
+  max-width: 50em;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+textarea {
+  width: 100%;
 }
 
 nav {
@@ -90,12 +102,14 @@ nav {
 .suitearticleleft {
   background-color: var(--accentLight);
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .suitearticleright {
   background-color: var(--mainLight);
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -163,6 +177,10 @@ hero {
 
 }
 
+#mainpagevideo {
+  max-width: 1280px;
+}
+
 @media screen and (min-width: 400px) {
 
     h1 {
@@ -186,6 +204,35 @@ hero {
 
 }
 
+#contacth1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--mainLight);
+}
+
+#contactinfo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--mainLight);
+  padding: 5em;
+}
+
+#contactinfo h2{
+  text-align: center;
+}
+
+#contactform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--accentLight);
+  padding: 3em;
+}
+
+#contactform h2{
+  text-align: center;
+}
 
 @media screen and (min-width: 800px) {
 
@@ -217,6 +264,10 @@ hero {
     width: 50%;
   }
   .suitetextbox {
+  }
+
+  #mainpagevideo {
+    margin: 30px;
   }
 }
 
