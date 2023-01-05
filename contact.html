@@ -8,19 +8,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2>Home</h2>
-      <nav>
-        <ul class="menuLinks">
-          <a href="index.html">Home</a>
-          <a href="suites.html">Suites</a>
-          <a href="contact.html">Contact</a>
-        </ul>
+    <header class="headershowmenu">
+      <div class="headertop">
+        <img class="logo" src="Media/logoempty.gif" alt="">
+        <h2 id="headerh2">Contact</h2>
+        <button id="menubutton3" class="menubutton"><img class="menubuttonimg" src="Media/hamburger.svg" alt=""></button>
+      </div>
+      <nav id="menucontact" class="menulinks">
+          <a class="menulink" href="index.html">Home</a>
+          <a class="menulink" href="suites.html">Suites</a>
+          <a class="menulink" href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main>
+      <hero>
+      <img class="heroimage" src="Media/contacthero.jpg" alt="">
+    </hero>
+      <div class="contenttopbox">
       <h1 id="contacth1">Contact</h1>
+      <p class="alterntetextcolor">
+        Thank you for considering Paradise Suites for your vacation needs.
+        Our team is dedicated to providing you with the ultimate in luxury
+        and comfort during your stay. If you have any questions or need
+        assistance with booking your suite, please don't hesitate to contact
+        us.
+      </p>
+    </div>
       <section id="contactform">
         <h2>Contact Form</h2>
         <form id="form" action="">
@@ -44,7 +58,7 @@
           />
             </fieldset>
             <fieldset>
-            <legend>Contact Form</legend>
+            <legend>Message</legend>
             
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
             <input id="sendMessage" type="submit" value="submit"/>
@@ -55,24 +69,33 @@
       <section id="contactinfo">
         <div>
           <h2>Contact Information</h2>
-          <p>
-            Thank you for considering Paradise Suites for your vacation needs.
-            Our team is dedicated to providing you with the ultimate in luxury
-            and comfort during your stay. If you have any questions or need
-            assistance with booking your suite, please don't hesitate to contact
-            us.
-          </p>
+          
           <p><b>Paradise Suites</b></p>
-          <p><b>123 Main Street</b><br /><b> Southeast Asia</b></p>
+          <div><b>123 Main Street</b><br /><b> Southeast Asia</b></p>
           <p>
-            <b>Phone: (123) 456-7890 </b><br /><b
-              >Email: info@paradisesuites.com</b
+            <b>Phone: <a href="tel:(123) 456-7890">(123) 456-7890</a> </b><br /><b
+              >Email: <a href="mailto:info@paradisesuites.com">info@paradisesuites.com</a></b
             >
           </p>
           <p>We look forward to welcoming you to Paradise Suites!</p>
         </div>
       </section>
     </main>
+
+    <footer>
+      <section class="footersize">
+        <p>fafasf</p>
+      </section>
+    </footer>
+
+    <div class="upbuttonsquare">
+      <button class="upbutton">
+        <a href="#">
+          <img class src="Media/up.svg" alt="" />
+        </a>
+      </button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

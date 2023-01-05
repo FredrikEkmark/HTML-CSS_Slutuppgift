@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2>Suites</h2>
-      <nav>
-        <ul class="menuLinks">
-          <a href="index.html">Home</a>
-          <a href="suites.html">Suites</a>
-          <a href="contact.html">Contact</a>
-        </ul>
+    <header class="headershowmenu">
+      <div class="headertop">
+        <img class="logo" src="Media/logoempty.gif" alt="">
+        <h2 id="headerh2">Suites</h2>
+        <button id="menubutton2" class="menubutton"><img class="menubuttonimg" src="Media/hamburger.svg" alt=""></button>
+      </div>
+      <nav id="menusuites" class="menulinks">
+          <a class="menulink" href="index.html">Home</a>
+          <a class="menulink" href="suites.html">Suites</a>
+          <a class="menulink" href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -40,7 +42,7 @@
 
       <section>
         <article class="suitearticleleft">
-          <img class="suiteimg" src="Media/suite1.jpg" alt="" />
+          <img id="suite1" class="suiteimg" src="Media/suite1.jpg" alt="" />
           <div class="suitetextbox">
             <h3>Ocean-view Suite</h3>
             <p>
@@ -54,7 +56,7 @@
         </article>
 
         <article class="suitearticleright">
-          <img class="suiteimg" src="Media/suite2.jpg" alt="" />
+          <img id="suite2" class="suiteimg" src="Media/suite2.jpg" alt="" />
           <div class="suitetextbox">
             <h3>Standard Suite</h3>
             <p>
@@ -69,7 +71,7 @@
         </article>
 
         <article class="suitearticleleft">
-          <img class="suiteimg" src="Media/suite3.jpg" alt="" />
+          <img id="suite3" class="suiteimg" src="Media/suite3.jpg" alt="" />
           <div class="suitetextbox">
             <h3>Delux Suites</h3>
             <p>
@@ -102,5 +104,14 @@
         <p>fafasf</p>
       </section>
     </footer>
+
+    <div class="upbuttonsquare">
+      <button class="upbutton">
+        <a href="#">
+          <img class src="Media/up.svg" alt="" />
+        </a>
+      </button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

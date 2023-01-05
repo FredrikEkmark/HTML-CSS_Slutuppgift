@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2>Home</h2>
-      <nav>
-        <ul class="menuLinks">
-          <a href="index.html">Home</a>
-          <a href="suites.html">Suites</a>
-          <a href="contact.html">Contact</a>
-        </ul>
+    <header class="headershowmenu">
+      <div class="headertop">
+        <img class="logo" src="Media/logoempty.gif" alt="">
+        <h2 id="headerh2">Home</h2>
+        <button id="menubutton1" class="menubutton"><img class="menubuttonimg" src="Media/hamburger.svg" alt=""></button>
+      </div>
+      <nav id="menuhome" class="menulinks">
+          <a class="menulink" href="index.html">Home</a>
+          <a class="menulink" href="suites.html">Suites</a>
+          <a class="menulink" href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main>
       <hero>
-        <h1 id="herotext">Paradise Suites</h1>
+        <h1 class="" id="herotext">Paradise Suites</h1>
         <img class="heroimage" src="Media/heroImage.jpg" alt="" />
       </hero>
 
-      <div class="contenttopbox">
+      <article class="contenttopbox">
         <h2 class="alterntetextcolor">Welcome to Paradise Suites!</h2>
         <p class="alterntetextcolor">
           Our hotel is the ultimate vacation destination, offering a range of
@@ -33,22 +35,61 @@
           penthouse suite with a private sunset infinity pool, to our stylish
           and modern deluxe suites with private balconies, you'll find the
           perfect retreat after a day of exploring. All of our suites are
-          beautifully decorated and equipped with all the amenities you need
-          for a comfortable and memorable stay. Located in the heart of
-          Southeast Asia, our hotel is the perfect base for exploring the
-          region's natural beauty and cultural attractions. Relax by our
-          stunning infinity pool, savor delicious meals at our on-site
-          restaurant, and unwind with a massage at our spa. Experience the
-          ultimate in luxury and relaxation at Paradise Suites.
+          beautifully decorated and equipped with all the amenities you need for
+          a comfortable and memorable stay. Located in the heart of Southeast
+          Asia, our hotel is the perfect base for exploring the region's natural
+          beauty and cultural attractions. Relax by our stunning infinity pool,
+          savor delicious meals at our on-site restaurant, and unwind with a
+          massage at our spa. Experience the ultimate in luxury and relaxation
+          at Paradise Suites.
         </p>
-      </div>
-      <div id="mainlinks">
-        <h3><a href="suites.html" class="alterntetextcolor">View Our Suites</a></h3>
+      </article>
+      <article id="homepagelinks">
+        <div id="homepagesuites">
+          <figure class="homepagesuitefigure">
+            <img class="homepagesuiteimg" src="Media/suite1.jpg" alt="" />
+            <figcaption>
+              <h3>
+                <a href="suites.html#suite1" class="alterntetextcolor"
+                  >Ocean-view Suite</a
+                >
+              </h3>
+            </figcaption>
+          </figure>
+          <figure class="homepagesuitefigure">
+            <img class="homepagesuiteimg" src="Media/suite2.jpg" alt="" />
+            <figcaption>
+              <h3>
+                <a href="suites.html#suite2" class="alterntetextcolor"
+                  >Standard Suite</a
+                >
+              </h3>
+            </figcaption>
+          </figure>
+          <figure class="homepagesuitefigure">
+            <img class="homepagesuiteimg" src="Media/suite3.jpg" alt="" />
+            <figcaption>
+              <h3>
+                <a href="suites.html#suite3" class="alterntetextcolor"
+                  >Delux Suites</a
+                >
+              </h3>
+            </figcaption>
+          </figure>
+        </div>
+
         <h3><a href="contact.html" class="alterntetextcolor">Contact Us</a></h3>
-      </div>
+      </article>
 
-      <video id="mainpagevideo" src="Media/homepagevideo.mp4" muted autoplay loop>The video did not play</video>
-
+      <video
+        id="mainpagevideo"
+        src="Media/homepagevideo.mp4"
+        muted
+        autoplay
+        loop
+      >
+        The video did not play
+      </video>
     </main>
 
     <footer>
@@ -56,5 +97,14 @@
         <p>fafasf</p>
       </section>
     </footer>
+
+    <div class="upbuttonsquare">
+      <button class="upbutton">
+        <a href="#">
+          <img class src="Media/up.svg" alt="" />
+        </a>
+      </button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
