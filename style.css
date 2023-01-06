@@ -63,7 +63,8 @@ header {
 
 .menulinks {
   width: 100%;
-  padding: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   background-color: var(--main);
   display: none;
   flex-direction: column;
