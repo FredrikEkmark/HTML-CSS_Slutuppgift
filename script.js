@@ -28,9 +28,9 @@ const herotextEl = document.getElementById("herotext");
 
 function messageSent() {
 
-    responsemessageEl.innerHTML = "Message sent";
+    responsemessageEl.innerHTML = "Thank you for contacting Paradise Suites. We have received your message and will respond as soon as possible. We look forward to welcoming you to Paradise Suites in the near future.";
     formEl.style.display = "none";
-    messagesentblockEl.style.display = "block";
+    messagesentblockEl.style.display = "flex";
     
 }
 

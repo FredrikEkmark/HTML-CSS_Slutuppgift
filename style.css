@@ -104,17 +104,24 @@ footer {
   height: 90px;
   width: 100%;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+
+.copywrite {
+  display: none;
 }
 
 .social {
   display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: space-around;
+  width: 70%;
 }
 
-.socialimg {
+.footericon {
+  max-width: 20%;
+  max-width: 2.5em;
+  
 }
 
 h1 {
@@ -255,8 +262,7 @@ hero {
 
 .upbuttonreservedspace {
   justify-self: flex-end;
-  background-color: #025949;
-  width: 5em;
+  width: 3.5em;
   height: 60px;
 }
 
@@ -309,6 +315,7 @@ hero {
 }
 
 form {
+  min-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,6 +323,7 @@ form {
 
 #contactform {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: var(--accentLight);
@@ -332,8 +340,15 @@ form {
 
 #messagesentblock {
   display: none;
+  flex-direction: column;
+}
+
+#resetformbutton {
+  width: 10em;
   align-self: center;
 }
+
+
 
 
 @media screen and (min-width: 400px) {
@@ -423,6 +438,9 @@ form {
   .suitetextbox {
   }
 
+  .copywrite {
+  display: block;
+  }
   #mainpagevideo {
     margin: 30px;
   }
