@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="shortcut icon" href="Media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -37,33 +38,75 @@
     </div>
       <section id="contactform">
         <h2>Contact Form</h2>
-        <form id="form" action="">
+        <form id="formcontent" action="">
+            
             <fieldset>
-                <legend>Personal information</legend>
-                <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
-            required
-          />
-          <br>
-          <label for="e-mail">E-mail</label><br/>
-          <input 
-            type="email"
-            name="e-mail"
-            id="e-mail"
-            placeholder="John.Doe@email.com"
-            required
-          />
+              <legend>Message type</legend>
+              <select name="messagetype" id="messagetype" onchange="selectmessagetype()">
+                <option value="1" selected>New Booking</option>
+                <option value="2">Amend Booking</option>
+                <option value="3">Open Message</option>
+              </select>
+            </fieldset>
+
+            <fieldset id="personalinfo">
+              <legend>Personal information</legend>
+              <label for="name">Name</label><br>
+              <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          required
+        />
+        <br>
+        <label for="e-mail">E-mail</label><br/>
+        <input 
+          type="email"
+          name="e-mail"
+          id="e-mail"
+          placeholder="John.Doe@email.com"
+          required
+        /><br>
+        <label for="telephone">Telephone Number</label><br>
+        <input type="tel" name="telephone" id="" placeholder="(123) 456-7890">
+          </fieldset>
+
+            <fieldset class="hide" id="newbooking">
+              <legend>New Booking</legend>
+              <label for="arrivaldate">Arrival Date</label><br>
+              <input type="date" name="arrivaldate" id=""><br>
+              <label for="departuredate">Departure Date</label><br>
+              <input type="date" name="departuredate" id=""><br>
+              <label for="roomselection">Select Room</label><br>
+              <select name="roomselection" id="roomselection">
+                <option value="" disabled selected>Select a Room</option>
+                <option value="ocean">Ocean-view Suite</option>
+                <option value="standard">Standard Suite</option>
+                <option value="delux">Delux Suite</option>
+                <option value="penthouse">Penthouse Suite</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="hide" id="bookingref">
+              <legend>Amend Existing Booking</legend>
+              <label for="bookingreference">Booking ID</label> <br>
+              <input type="text" name="bookingreference" id="">
             </fieldset>
             <fieldset>
             <legend>Message</legend>
             
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input id="sendMessage" type="submit" value="submit"/>
+            <input id="sendMessage" type="submit" value="Submit"/>
+            </fieldset>
+            
           </form>
-    </fieldset>
+          <div id="messagesentblock">
+            <p id="responsemessage"></p>
+            <button id="resetformbutton"> Send new message </button>
+          </div>
+          
+    
       </section>
 
       <section id="contactinfo">
@@ -83,9 +126,13 @@
     </main>
 
     <footer>
-      <section class="footersize">
-        <p>fafasf</p>
+      <p>3</p>
+      <section class="social">
+        <a href="tel:(123) 456-7890">Call</a>
+        <a href="mailto:info@paradisesuites.com">E-mail</a>
       </section>
+      <div class="upbuttonreservedspace"></div>
+      
     </footer>
 
     <div class="upbuttonsquare">
@@ -95,7 +142,6 @@
         </a>
       </button>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

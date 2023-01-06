@@ -1,10 +1,17 @@
 // Elements to modyfi html
 
 const sendMessageEl = document.getElementById("sendMessage");
+const formEl = document.getElementById("formcontent")
+const messagesentblockEl = document.getElementById("messagesentblock")
+
+// Select Element //
+
+var select = document.getElementById("messagetype");
 
 // Buttons //
 
-const formEl = document.getElementById("form");
+const responsemessageEl = document.getElementById("responsemessage");
+const resetformbuttonEl = document.getElementById("resetformbutton")
 
 const menubutton3El = document.getElementById("menubutton3");
 const menubutton2El = document.getElementById("menubutton2");
@@ -17,12 +24,21 @@ const menusuitesEl = document.getElementById("menusuites");
 const menucontactEl = document.getElementById("menucontact");
 const herotextEl = document.getElementById("herotext");
 
-
 // Functions
 
 function messageSent() {
 
-    formEl.innerHTML = "Message sent";
+    responsemessageEl.innerHTML = "Message sent";
+    formEl.style.display = "none";
+    messagesentblockEl.style.display = "block";
+    
+}
+
+function resetform() {
+
+    responsemessageEl.innerHTML = "";
+    messagesentblockEl.style.display = "none";
+    formEl.style.display = "block";
 
 }
 
@@ -43,22 +59,29 @@ function openrolldownmenu3() {
 }
 
 function selectmessagetype() {
-    var value = select.options[select.selectedIndex].value;
+
+    if (select != null) {
+        var value = select.options[select.selectedIndex].value;
     
-    if (value == "1") {
-      document.getElementById("newbooking").style.display = "block";
-      document.getElementById("bookingref").style.display = "none";
+        if (value == "1") {
+            document.getElementById("personalinfo").style.display = "block";
+            document.getElementById("newbooking").style.display = "block";
+            document.getElementById("bookingref").style.display = "none";
       
-    } else if (value == "2") {
-      document.getElementById("newbooking").style.display = "none";
-      document.getElementById("bookingref").style.display = "block";
+        } else if (value == "2") {
+            document.getElementById("personalinfo").style.display = "none";
+            document.getElementById("newbooking").style.display = "none";
+            document.getElementById("bookingref").style.display = "block";
       
-    } else if (value == "3") {
-      document.getElementById("newbooking").style.display = "none";
-      document.getElementById("bookingref").style.display = "none";
+        } else if (value == "3") {
+            document.getElementById("personalinfo").style.display = "block";
+            document.getElementById("newbooking").style.display = "none";
+            document.getElementById("bookingref").style.display = "none";
+        }
     }
 }
 
+selectmessagetype()
 
 
 // EventListeners //
@@ -74,14 +97,13 @@ if (menubutton3El != null) {
 menubutton3El.addEventListener('click', openrolldownmenu3);
 }
 
-if (menubutton1El != null) {
+if (sendMessageEl != null) {
 sendMessageEl.addEventListener('click', messageSent);
 }
 
-var select = document.getElementById("messagetype");
+if (resetformbuttonEl != null) {
 
-if (messagetype != null) {
-    selectmessagetype();
+    resetformbuttonEl.addEventListener('click', resetform)
 }
 
 
