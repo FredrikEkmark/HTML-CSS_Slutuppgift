@@ -294,7 +294,9 @@ hero {
 }
 
 #mainpagevideo {
+  width: 100%;
   max-width: 1280px;
+  aspect-ratio: 16/9;
 }
 
 #contacth1 {
@@ -442,11 +444,5 @@ form {
   .copywrite {
   display: block;
   }
-  #mainpagevideo {
-    margin: 30px;
-  }
-}
 
-#toggleoff {
-  display: none;
 }
