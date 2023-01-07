@@ -23,9 +23,9 @@
     </header>
 
     <main>
-      <hero>
-      <img class="heroimage" src="Media/contacthero.jpg" alt="">
-    </hero>
+      <div class="hero">
+      <img class="heroimage" src="Media/contacthero.jpg" alt="A pool in the middle of a jungle like area. Building are peaking up behind the pool amoungs the palms">
+      </div>
       <div class="contenttopbox">
       <h1 id="contacth1">Contact</h1>
       <p class="alterntetextcolor">
@@ -38,7 +38,7 @@
     </div>
       <section id="contactform">
         <h2>Contact Form</h2>
-        <form id="formcontent" action="">
+        <form id="formcontent" action="none">
             
             <fieldset>
               <legend>Message type</legend>
@@ -69,15 +69,15 @@
           required
         /><br>
         <label for="telephone">Telephone Number</label><br>
-        <input type="tel" name="telephone" id="" placeholder="(123) 456-7890">
+        <input type="tel" name="telephone" id="telephone" placeholder="(123) 456-7890">
           </fieldset>
 
             <fieldset class="hide" id="newbooking">
               <legend>New Booking</legend>
               <label for="arrivaldate">Arrival Date</label><br>
-              <input type="date" name="arrivaldate" id=""><br>
+              <input type="date" name="arrivaldate" id="arrivaldate"><br>
               <label for="departuredate">Departure Date</label><br>
-              <input type="date" name="departuredate" id=""><br>
+              <input type="date" name="departuredate" id="departuredate"><br>
               <label for="roomselection">Select Room</label><br>
               <select name="roomselection" id="roomselection">
                 <option value="" disabled selected>Select a Room</option>
@@ -91,7 +91,7 @@
             <fieldset class="hide" id="bookingref">
               <legend>Amend Existing Booking</legend>
               <label for="bookingreference">Booking ID</label> <br>
-              <input type="text" name="bookingreference" id="">
+              <input type="text" name="bookingreference" id="bookingreference">
             </fieldset>
             <fieldset>
             <legend>Message</legend>
@@ -114,9 +114,9 @@
           <h2>Contact Information</h2>
           
           <p><b>Paradise Suites</b></p>
-          <div><b>123 Main Street</b><br /><b> Southeast Asia</b></p>
+          <p><b>123 Main Street</b><br /><b> Southeast Asia</b></p>
           <p>
-            <b>Phone: <a href="tel:(123) 456-7890">(123) 456-7890</a> </b><br /><b
+            <b>Phone: <a href="tel:1234567890">(123) 456-7890</a> </b><br /><b
               >Email: <a href="mailto:info@paradisesuites.com">info@paradisesuites.com</a></b
             >
           </p>
@@ -127,21 +127,19 @@
 
     <footer>
       <p class="copywrite">© Fredrik Ekmark 2023</p>
-      <section class="social">
-        <a href="http://instagram.com"><img class="footericon" src="Media/instaicon.gif" alt=""></a>
-        <a href="http://facebook.com"><img class="footericon" src="Media/facebookicon.gif" alt=""></a>
-        <a href="tel:(123) 456-7890"><img class="footericon" src="Media/callicon.gif" alt=""></a>
-        <a href="mailto:info@paradisesuites.com"><img class="footericon" src="Media/emailicon.gif" alt=""></a>
-      </section>
+      <div class="social">
+        <a href="http://instagram.com"><img class="footericon" src="Media/instaicon.gif" alt="Instagram icon"></a>
+        <a href="http://facebook.com"><img class="footericon" src="Media/facebookicon.gif" alt="Facebook icon"></a>
+        <a href="tel:1234567890"><img class="footericon" src="Media/callicon.gif" alt="Phone icon"></a>
+        <a href="mailto:info@paradisesuites.com"><img class="footericon" src="Media/emailicon.gif" alt="E-mail icon"></a>
+      </div>
       <div class="upbuttonreservedspace"></div>
     </footer>
 
     <div class="upbuttonsquare">
-      <button class="upbutton">
-        <a href="#">
+        <a class="upbutton" href="#">
           <img class src="Media/up.svg" alt="" />
         </a>
-      </button>
     </div>
     <script src="script.js"></script>
   </body>

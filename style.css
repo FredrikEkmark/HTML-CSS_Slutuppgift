@@ -212,7 +212,7 @@ nav {
   max-height: 90%;
 }
 
-hero {
+.hero {
   background-color: var(--main);
   display: flex;
   justify-content: center;
@@ -248,9 +248,11 @@ hero {
 }
 
 .upbuttonsquare {
-  background-color: 00;
+  background-color: #ffffff95;
+  border-radius: 2.4em;
   height: 4.8em;
   width: 4.8em;
+  margin: 0.4em;
   position: fixed;
   bottom: 0em;
   right: 0;
